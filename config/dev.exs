@@ -2,13 +2,8 @@ import Config
 
 # Configure your database
 config :lexi, Lexi.Repo,
-  username: "postgres",
-  password: "postgres",
-  hostname: "localhost",
-  database: "lexi_dev",
-  stacktrace: true,
-  show_sensitive_data_on_connection_error: true,
-  pool_size: 10
+  adapter: Ecto.Adapters.SQLite3,
+  database: "priv/repo/dev.sqlite"
 
 # For development, we disable any cache and enable
 # debugging and code reloading.
