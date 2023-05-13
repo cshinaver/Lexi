@@ -7,9 +7,6 @@
 # General application configuration
 import Config
 
-config :lexi,
-  ecto_repos: [Lexi.Repo]
-
 # Configures the endpoint
 config :lexi, LexiWeb.Endpoint,
   url: [host: "localhost"],
@@ -18,7 +15,7 @@ config :lexi, LexiWeb.Endpoint,
     layout: false
   ],
   pubsub_server: Lexi.PubSub,
-  live_view: [signing_salt: "qLF8z7QQ"]
+  live_view: [signing_salt: "Yimpcdes"]
 
 # Configures the mailer
 #

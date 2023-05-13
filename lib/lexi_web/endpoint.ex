@@ -7,7 +7,7 @@ defmodule LexiWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_lexi_key",
-    signing_salt: "CqZshENu",
+    signing_salt: "5HxqGGIw",
     same_site: "Lax"
   ]
 
@@ -29,7 +29,6 @@ defmodule LexiWeb.Endpoint do
     socket "/phoenix/live_reload/socket", Phoenix.LiveReloader.Socket
     plug Phoenix.LiveReloader
     plug Phoenix.CodeReloader
-    plug Phoenix.Ecto.CheckRepoStatus, otp_app: :lexi
   end
 
   plug Phoenix.LiveDashboard.RequestLogger,

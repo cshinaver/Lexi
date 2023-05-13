@@ -10,8 +10,6 @@ defmodule Lexi.Application do
     children = [
       # Start the Telemetry supervisor
       LexiWeb.Telemetry,
-      # Start the Ecto repository
-      Lexi.Repo,
       # Start the PubSub system
       {Phoenix.PubSub, name: Lexi.PubSub},
       # Start Finch

@@ -1,10 +1,5 @@
 import Config
 
-# Configure your database
-config :lexi, Lexi.Repo,
-  adapter: Ecto.Adapters.SQLite3,
-  database: "priv/repo/dev.sqlite"
-
 # For development, we disable any cache and enable
 # debugging and code reloading.
 #
@@ -18,7 +13,7 @@ config :lexi, LexiWeb.Endpoint,
   check_origin: false,
   code_reloader: true,
   debug_errors: true,
-  secret_key_base: "KHQ6d+9A6Nk+isuLvLhPBS64u5ivyDfsCVnfMoNaZRguQdnpctFCGJQ4YXv4vLGH",
+  secret_key_base: "XgsNXPOUZ17l1naE8J1WhPpByx+qU9KHOiRYijCSYOxmdcq599uQ7Qo8KcRTIO3L",
   watchers: [
     esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]},
     tailwind: {Tailwind, :install_and_run, [:default, ~w(--watch)]}
