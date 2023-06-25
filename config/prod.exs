@@ -12,6 +12,7 @@ import Config
 config :lexi, LexiWeb.Endpoint,
   server: true,
   url: [host: System.get_env("RENDER_EXTERNAL_HOSTNAME") || "localhost", port: 80],
+  check_origin: ["https://lexi.onrender.com"],
   cache_static_manifest: "priv/static/cache_manifest.json"
 
 # Configures Swoosh API Client
