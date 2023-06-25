@@ -56,7 +56,11 @@ socket.connect()
 // Now that you are connected, you can join channels with a topic.
 // Let's assume you have a channel with a topic named `room` and the
 // subtopic is its id - in this case lobby:
-let channel = socket.channel("room:lobby", {})
+
+//TODO implement user auth and use their token as the room id.
+// Create random id for now.
+let privateChannelId = Math.random().toString(36).substring(7);
+let channel = socket.channel("room:" + privateChannelId, {})
 let chatInput         = document.querySelector("#chat-input")
 let messagesContainer = document.querySelector("#messages")
 
