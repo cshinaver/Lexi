@@ -2,8 +2,11 @@
 
 To start your Phoenix server:
 
-  * Run `mix setup` to install and setup dependencies
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+## Makefile commands
+
+* `make setup`: installs all dependencies
+* `make serve`: builds and runs server in watch mode
+* `make clean`: cleans up all build files
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
